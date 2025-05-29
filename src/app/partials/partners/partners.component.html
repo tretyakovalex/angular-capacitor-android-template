@@ -1,0 +1,10 @@
+<div class="overflow-hidden relative bg-base-100 py-4">
+    <div class="flex animate-slide lg:gap-10 sm:gap-4 w-max">
+        <ng-container *ngFor="let logo of logos">
+            <div class="flex items-center justify-center min-w-[150px] h-20 gap-2 grayscale hover:grayscale-0">
+                <img [src]="logo.url" [alt]="logo.name" class="h-6 w-auto transition duration-300" />
+                <p class="text-xl font-semibold text-gray-500" [style.color]="logo.color">{{logo.name}}</p>
+            </div>
+        </ng-container>
+    </div>
+</div>
